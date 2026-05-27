@@ -133,6 +133,11 @@ result = classifier("This fantasy novel had incredible world-building and magic 
 print(result)
 ```
 
+## Results
+MetricScoreAccuracy  |  0.6013  |
+Weighted F1          |  0.5979  |
+Eval Loss            |  2.2483  |
+
 ---
 
 ### What the W&B Charts Showed
