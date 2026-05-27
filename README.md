@@ -135,16 +135,6 @@ print(result)
 
 ---
 
-## Results
-
-| Metric      | Score |
-|-------------|-------|
-| Accuracy    |       |
-| Weighted F1 |       |
-| Eval Loss   |       |
-
-> 
-
 ### What the W&B Charts Showed
 - Training loss decreased steadily across all 3 epochs — model was learning
 - Validation loss tracked training loss closely — no significant overfitting
@@ -157,7 +147,7 @@ print(result)
 ```
 mlops-assignment2/
 ├── mlops-assignment.ipynb      # Kaggle notebook — full training pipeline
-├── mlops_assignment.py         # Python script exported from Kaggle notebook
+├── train_pipeline.py           # Python script exported from Kaggle notebook
 ├── requirements.txt            # All Python dependencies
 └── README.md                   # This file
 ```
@@ -193,7 +183,7 @@ export HF_TOKEN=<your_huggingface_token>
 
 ### 5. Run locally (CPU only — slow)
 ```bash
-python mlops_assignment.py
+python train_pipeline.py
 ```
 > For CPU runs, reduce sample size to 200 per genre and set `device = 'cpu'`
 
@@ -203,7 +193,7 @@ python mlops_assignment.py
 
 | Resource            | URL                                                                                   |
 |---------------------|---------------------------------------------------------------------------------------|
-| 🤗 Hugging Face Model | [DishaSinghania/distilbert-goodreads-genres](https://huggingface.co/DishaSinghania/distilbert-goodreads-genres) |
-| 📊 W&B Dashboard      | [mlops-assignment2](https://wandb.ai/dishasinghania19/mlops-assignment2)              |
-| 📓 Kaggle Notebook    | [mlops-assignment](https://www.kaggle.com/code/disha2031/mlops-assignment)            |
-| 💻 GitHub Repository  | [mlops-assignment2](https://github.com/Disha19/mlops-assignment2)                    |
+|  Hugging Face Model | [DishaSinghania/distilbert-goodreads-genres](https://huggingface.co/DishaSinghania/distilbert-goodreads-genres) |
+|  W&B Dashboard      | [mlops-assignment2](https://wandb.ai/dishasinghania19/mlops-assignment2)              |
+|  Kaggle Notebook    | [mlops-assignment](https://www.kaggle.com/code/disha2031/mlops-assignment)            |
+|  GitHub Repository  | [mlops-assignment2](https://github.com/Disha19/mlops-assignment2)                     |
